@@ -1,5 +1,5 @@
-.body-block{
-    height: 500px;
+.body-child {
+    height: 100%;
     width: 100%;
-    border: 1px green solid;
+    border: 4px yellow solid;
 }
