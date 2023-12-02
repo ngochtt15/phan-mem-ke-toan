@@ -1,0 +1,8 @@
+.item {
+    float: left;
+    flex: 4;
+    margin: 5px;
+}
+.container {
+    display: flex;
+  }

@@ -10,12 +10,21 @@ import { AppRouter } from "./app.routes";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import {  HttpClient } from "@angular/common/http";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { DashboardComponent } from "./dashboard/dashboard.component";
+//import { LoginComponent } from "./login/login.component";
+import { HomeComponent } from "./home/home.component";
+import { DashboardBodyComponent } from "./dashboard/dashboard-body/dashboard-body.component";
+import { DashboardItemComponent } from "./dashboard/dashboard-item/dashboard-item.component";
 
 
 @NgModule({
   declarations: [
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    DashboardComponent,
+    HomeComponent,
+    DashboardBodyComponent,
+    DashboardItemComponent
   ],
   imports: [
     BrowserModule,
