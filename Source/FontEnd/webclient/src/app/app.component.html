@@ -1,8 +1,20 @@
 <div id="body-main">
-  <!-- header-->
-  <!-- <app-menu></app-menu> -->
-  <!-- layout body-->
-    <router-outlet></router-outlet>
-  <!-- footer-->
-  <!-- <app-footer></app-footer> -->
+  <div class="row-item">
+    <div class="item-main" [ngClass]="isMenuShowFlg ? 'is-display' : 'is-hidden'">
+      <div class="block-menu">
+        <app-menu></app-menu>
+      </div>
+    </div>
+    <div class="item-main">
+      <div class="object block-body">
+        <div class="block-content">
+          <router-outlet></router-outlet>
+        </div>
+        <div class="object block-footer" [ngClass]="isFooterShowFlg ? 'is-display' : 'is-hidden'">
+          <app-footer></app-footer>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
