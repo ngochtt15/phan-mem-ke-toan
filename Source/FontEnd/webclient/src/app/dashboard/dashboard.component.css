@@ -6,16 +6,15 @@
 }
 .container {
     display: flex;
+    width: 1120px;
 }
 
 .item-block{
     height: 100px;
     width: 25%;
-    border: 4px blue solid;
 }
 
 .body-block{
     height: 500px;
     width: 100%;
-    border: 4px green solid;
 }
