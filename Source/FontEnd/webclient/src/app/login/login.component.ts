@@ -8,7 +8,13 @@ import { AppComponent } from '../app.component';
   styleUrl: './login.component.css'
 })
 export class LoginComponent implements OnInit, OnDestroy{
-  
+
+  //khai báo biến
+  public loginInfo = {
+    Username:"",
+    Password:""
+  };
+
   constructor(
     private appComponent: AppComponent
   ){
@@ -25,7 +31,19 @@ export class LoginComponent implements OnInit, OnDestroy{
   }
 
   onLogin(){
-    
+    var isOK = this.validateLogin();
+    if(isOK == true) {
+      alert("LOGIN THÀNH CÔNG");
+    } else {
+      alert("LOGIN THẤT BẠI");
+    }
+  }
+
+  validateLogin(){
+    alert("1111111111 = " + this.loginInfo.Username);
+    alert("2222222222 = " + this.loginInfo.Password);
+
+    return true;
   }
 
 }
